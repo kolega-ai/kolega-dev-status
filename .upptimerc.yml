@@ -13,12 +13,11 @@ sites:
 
 status-website:
   baseUrl: /kolega-dev-status
-  logoUrl: https://kolega.dev/favicon.svg
+  logoUrl: https://kolega.dev/logos/kolega.svg
   favicon: https://kolega.dev/favicon.svg
   name: Kolega.dev Status
   theme: dark
-  introTitle: "**Kolega.dev Status** is the uptime monitor and status page for [Kolega](https://kolega.dev)."
-  introMessage: This page provides live uptime and response-time data for Kolega services, powered by [Upptime](https://github.com/upptime/upptime).
+  introTitle: "This is the uptime monitor and status page for [Kolega.dev](https://kolega.dev)."
   navbar:
     - title: Status
       href: /
@@ -28,9 +27,15 @@ status-website:
       href: https://github.com/$OWNER/$REPO
   css: |
     :root {
-      --body-background-color: #000000;
-      --body-color: #ffffff;
-      --card-background-color: #111111;
-      --nav-background-color: #000000;
-      --nav-color: #ffffff;
+      --body-background-color: #0A0A0A;
+      --body-color: #e2e8f0;
+      --card-background-color: #1A1A1A;
+      --nav-background-color: #0A0A0A;
+      --nav-color: #e2e8f0;
     }
+    a { color: #ADDD30; }
+    a:hover { color: #C4F03E; }
+    h1, h2, h3 { color: #ffffff; }
+    .logo div { color: #ffffff; }
+    nav a { color: #e2e8f0; }
+    nav a:hover { color: #ADDD30; }
