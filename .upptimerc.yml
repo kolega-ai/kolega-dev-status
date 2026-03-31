@@ -1,0 +1,36 @@
+owner: kolega-ai
+repo: kolega-dev-status
+
+sites:
+  - name: Website
+    url: https://kolega.dev
+
+  - name: App
+    url: https://app.kolega.dev
+
+  - name: API Health
+    url: https://api.kolega.dev/health
+
+status-website:
+  baseUrl: /kolega-dev-status
+  logoUrl: https://kolega.dev/favicon.svg
+  favicon: https://kolega.dev/favicon.svg
+  name: Kolega.dev Status
+  theme: dark
+  introTitle: "**Kolega.dev Status** is the uptime monitor and status page for [Kolega](https://kolega.dev)."
+  introMessage: This page provides live uptime and response-time data for Kolega services, powered by [Upptime](https://github.com/upptime/upptime).
+  navbar:
+    - title: Status
+      href: /
+    - title: Kolega.dev
+      href: https://kolega.dev
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
+  css: |
+    :root {
+      --body-background-color: #000000;
+      --body-color: #ffffff;
+      --card-background-color: #111111;
+      --nav-background-color: #000000;
+      --nav-color: #ffffff;
+    }
