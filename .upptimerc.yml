@@ -16,7 +16,6 @@ status-website:
   logoUrl: https://kolega.dev/logos/kolega.svg
   favicon: https://kolega.dev/favicon.svg
   name: Kolega.dev Status
-  theme: dark
   introTitle: "This is the uptime monitor and status page for [Kolega.dev](https://kolega.dev)."
   navbar:
     - title: Status
@@ -25,15 +24,32 @@ status-website:
       href: https://kolega.dev
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  graphBackgroundColor: "#ADDD3040"
-  graphBorderColor: "#ADDD30"
   css: |
     :root {
       --body-background-color: #0A0A0A;
-      --body-color: #e2e8f0;
+      --body-text-color: #e2e8f0;
       --card-background-color: #1A1A1A;
+      --card-border-color: #2A2A2A;
       --nav-background-color: #0A0A0A;
-      --nav-color: #e2e8f0;
+      --nav-border-bottom-color: #2A2A2A;
+      --nav-current-border-bottom-color: #ADDD30;
+      --up-border-left-color: #ADDD30;
+      --down-border-left-color: #eb3b5a;
+      --down-background-color: #3b1020;
+      --degraded-border-left-color: #f7b731;
+      --tag-color: #0A0A0A;
+      --tag-up-background-color: #ADDD30;
+      --tag-down-background-color: #eb3b5a;
+      --tag-degraded-background-color: #f7b731;
+      --change-background-color: #f7b731;
+      --error-button-border-color: #1a46ad;
+      --error-button-background-color: #3867d6;
+      --error-button-color: #ffffff;
+      --submit-button-border-color: #1a46ad;
+      --submit-button-background-color: #3867d6;
+      --submit-button-color: #ffffff;
+      --graph-opacity: 1;
+      --graph-filter: grayscale(100%) brightness(0.8);
     }
     a { color: #ADDD30; }
     a:hover { color: #C4F03E; }
@@ -43,4 +59,9 @@ status-website:
     nav a:hover { color: #ADDD30; }
     article.link a { color: #ffffff; }
     article.link .data { color: #e2e8f0; }
-    .live-status article { border-color: #2A2A2A; }
+    article.graph { filter: grayscale(100%) brightness(0.8); }
+    article .graph { filter: grayscale(100%) brightness(0.8); }
+    .live-status article { filter: grayscale(100%) brightness(0.8); }
+    footer { opacity: 0; }
+  graphBackgroundColor: "#ADDD3040"
+  graphBorderColor: "#ADDD30"
