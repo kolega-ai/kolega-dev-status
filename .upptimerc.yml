@@ -25,6 +25,8 @@ status-website:
       href: https://kolega.dev
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+  graphBackgroundColor: "#ADDD3040"
+  graphBorderColor: "#ADDD30"
   css: |
     :root {
       --body-background-color: #0A0A0A;
@@ -39,3 +41,6 @@ status-website:
     .logo div { color: #ffffff; }
     nav a { color: #e2e8f0; }
     nav a:hover { color: #ADDD30; }
+    article.link a { color: #ffffff; }
+    article.link .data { color: #e2e8f0; }
+    .live-status article { border-color: #2A2A2A; }
