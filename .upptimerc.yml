@@ -12,7 +12,7 @@ sites:
     url: https://api.kolega.dev/health
 
 status-website:
-  baseUrl: /kolega-dev-status
+  cname: status.kolega.dev
   logoUrl: https://kolega.dev/logos/kolega.svg
   favicon: https://kolega.dev/favicon.svg
   name: Kolega.dev Status
